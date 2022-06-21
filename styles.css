@@ -4,6 +4,7 @@
 
 :root {
 	--navbar-background: #141414;
+	/* Uncomment your desired accent colors */
 	/* Green Accent Colors */
 	/*--accent-light: #b4f7d6;
 	--accent-medium: #48ce94;
@@ -12,19 +13,19 @@
 	--accent-low-sat-light: #7bcba5;
 	--accent-hover: #16f5bd;*/
 	/* Blue Accent Colors */
-	/* --accent-light: #b4cef7;
+	/*--accent-light: #b4cef7;
 	--accent-medium: #487bce;
 	--accent-dark: #2e4f84;
 	--accent-low-sat: #6781aa;
 	--accent-low-sat-light: #7b9acb;
 	--accent-hover: #166cf5; */
 	/* Orange Accent Colors */
-	/* --accent-light: #f7cab4;
+	/*--accent-light: #f7cab4;
 	--accent-medium: #ce7548;
 	--accent-dark: #844b2e;
 	--accent-low-sat: #aa7e67;
 	--accent-low-sat-light: #cb967b;
-	--accent-hover: #f56016; */
+	--accent-hover: #f56016;*/
 	/* Purple Accent Colors */
 	--accent-light: #f7aee4;
 	--accent-medium: #ce48aa;
