@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Components - Your Software</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.svg">
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<ul class="navbar" id="navbar">
+	<li><a class="stamina-name" id="stamina" href="index.html"><div id="slogo">SOFTWARE NAME</div></a></li>
+	<li><a class="openbutton" id="openbutton" onclick="openNav()">&#9776;</a></li>
+	<li><a class="closebutton" id="closebutton" onclick="closeNav()">&times;</a></li>
+	<li><a class="active" id="active" href="index.html">Home</a></li>
+	<li><a class="navbutton" href="about.html">Components</a></li>
+	<li class="right"><a title="Toggle Light/Dark Mode" onclick="toggleDarkMode()"><img src="images/icons/darkLight.svg" height="15px"></a></li>
+	<li class="right"><a class="fluent" href="https://fluentverification.github.io">FLUENT Verification</a></li>
+</ul>
+<div class="top-buffer" id="top-buffer"><br></div>
+<!-- Back to top button -->
+<a class="btt-button" id="btt-button" href="#" style="color: white;">
+<img src="images/icons/up.svg" height=20px>&nbsp;&nbsp;Back to Top</a>
+<script>
+let bttButton = document.getElementById('btt-button');
+
+if (bttButton != null) {
+	window.onscroll = function() {
+		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			bttButton.style.display = "block";
+		}
+		else {
+			bttButton.style.display = "none";
+		}
+	}
+}
+</script>
+<!-- Cookie Banner -->
+<div class="cookie-banner" id="cookie-banner">
+	<table>
+		<tr>
+		<td>
+	This website saves only <i>one</i> cookie on your browser with the purpose of remembering whether you prefer dark or light mode. Naturally, <b>we do not track you</b>, store excessive cookies, advertise on this site, or anything of the sort. That would be extremely unprofessional of us. If you are seeing this message, it means the cookie with your preferred color scheme is being stored this session, and you will not see this message on future visits. <a href="privacy.html">More...</a>
+	</td><td>
+	<a style="color:black; padding: 10px; font-size: 20pt; cursor: pointer;" onclick="closeCookieBanner()">&times;</a></td><tr>
+	</table>
+	<script>
+		function closeCookieBanner() {
+			let cookieBanner = document.getElementById('cookie-banner');
+			cookieBanner.style.display = "none";
+		}
+	</script>
+</div>
+<div class="content">
+<!-- CONTENT -->
+
+</div>
+<!-- Footer -->
+<div class="footer">
+	<div class="footer-links">
+		<table style="width:80%">
+			<tr>
+				<th>Your Software Information</th>
+				<th>FLUENT Information</th>
+				<th>Papers and Research</th>
+			</tr>
+			<tr>
+				<td><a href="https://github.com/fluentverification/stamina-cplusplus">Link 1</a></td>
+				<td><a href="index.html">State-space truncation (STAMINA)</a></td>
+				<td><a href="https://scholar.google.com/citations?hl=en&user=1bpMdpUAAAAJ">Google Scholar</a></td>
+			</tr>
+			<tr>
+				<td><a href="https://github.com/fluentverification/stamina">Link 2</a></td>
+				<td><a href="#">Property-Directed Reachability</a></td>
+			</tr>
+			<tr>
+				<td><a href="about.html#contact">Contact Developers</a></td>
+				<td><a href="#">Counterexample Generation</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="https://fluentverification.github.io">Fluent Website</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="https://fluentverification.github.io/contact/">Contact Fluent</a></td>
+			</tr>
+		</table>
+	</div>
+	<div style="padding-top: 30px;" >
+		YOUR SOFTWARE is part of the tools developed by the FLUENT Team. The SOFTWARE tool is licensed under the LICENSE license.
+	</div>
+	<div style="padding-top: 10px; font-size: 8pt;" >
+		This website is designed and developed by hand by Josh Jeppson. The content and design of this website is licensed under the CC-BY-SA license.
+	</div>
+</div>
+</body>
