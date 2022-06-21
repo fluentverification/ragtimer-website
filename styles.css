@@ -190,7 +190,7 @@ body {
 	background-color: #efefef;
 }
 
-code, .code {
+.code {
 	border-color: #969696;
 	font-weight: semi-expanded;
 	font-family: 'Noto Sans Mono', monospace;

@@ -63,7 +63,15 @@ if (bttButton != null) {
 	<div class="code">
 		This is a monospaced code block. It is good for commands.
 	</div>
-	<a class="button">This is a button</a>
+	<a class="button" onclick="fooBar()">This is a button</a>
+	<script>
+/*
+It's good practice to keep page-specific scripts in the page
+*/
+function fooBar() {
+	alert("You have clicked the button.");
+}
+	</script>
 	<h3 class="collapsible-header" id="a-collapsible-header" onclick="openCollapsible('a-collapsible', 'a-collapsible-header')">
 		<!-- Include this icon with this naming convention -->
 		<div id="a-collapsible-header-icon" style="width: 40px; display: inline-block; overflow: hidden;">&#9776;</div>
