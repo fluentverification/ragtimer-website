@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home - Software Name</title>
+	<title>Home - RAGTIMER</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
@@ -11,26 +11,28 @@
 <body>
 <!-- Navigation Bar -->
 <ul class="navbar" id="navbar">
-	<li><a class="stamina-name" id="stamina" href="index.html"><div id="slogo">SOFTWARE NAME</div></a></li>
+	<li><a id="ragtimer" href="index.html"><img src=images/logo.png class="ragtimer-logo"></a></li>
 	<li><a class="openbutton" id="openbutton" onclick="openNav()">&#9776;</a></li>
 	<li><a class="closebutton" id="closebutton" onclick="closeNav()">&times;</a></li>
 	<li><a class="active" id="active" href="index.html">Home</a></li>
-	<li><a class="navbutton" href="about.html">Components</a></li>
-	<li class="right"><a title="Toggle Light/Dark Mode" onclick="toggleDarkMode()"><img src="images/icons/darkLight.svg" height="15px"></a></li>
+	<li><a class="navbutton" href="about.html">About</a></li>
+	<li><a class="navbutton" href="download.html">Download</a></li>
+	<li class="right"><a id="dark-toggle" title="Toggle Light/Dark Mode" onclick="toggleDarkMode()"><img src="images/icons/darkLight.svg" height="15px"></a></li>
 	<li class="right"><a class="fluent" href="https://fluentverification.github.io">FLUENT Verification</a></li>
+<!-- 	<li class="right"><a class="fluent" href="https://fluentverification.github.io">FLUENT Verification</a></li> -->
 </ul>
 <div class="top-buffer" id="top-buffer"><br></div>
 <div class="banner">
-	<h1>A Banner</h1>
+	<h1>RAGTIMER</h1>
 	<h2>
-		A short sentence introducing your software.
+		Random Assume Guarantee Testing Induced Model Executions for Reachability.
 	</h2>
-	<a class="button" href="https://github.com/fluentverification/stamina-cplusplus/releases/tag/v2.2.5-alpha"><img class="button-icon" src="images/icons/download.svg" height="20px"> Download Latest Release (2.2.5)</a>
-	<a class="button" href="https://github.com/fluentverification/stamina"><img class="button-icon" src="images/icons/github_mark.svg" height="20px"> Get Source Code</a>
+	<a class="button" href="#"><img class="button-icon" src="images/icons/download.svg" height="20px"> Download Latest Release (2.2.5)</a>
+	<a class="button" href="https://github.com/fluentverification/ragtimer"><img class="button-icon" src="images/icons/github_mark.svg" height="20px"> Get Source Code</a>
 </div>
 <!-- Back to top button -->
 <a class="btt-button" id="btt-button" href="#" style="color: white;">
-<img src="images/icons/up.svg" height=20px>&nbsp;&nbsp;Back to Top</a>
+Back to Top</a>
 <script>
 let bttButton = document.getElementById('btt-button');
 
@@ -63,7 +65,6 @@ if (bttButton != null) {
 </div>
 <div class="content">
 <!-- CONTENT -->
-	<img src="images/staminaGraphic.svg" class="graphic">
 	<h1>FLUENT Software web template</h1>
 	<p>
 		This web template is based on the website I developed for STAMINA, but can be adapted for any of our software. It has a light and dark mode and remembers which a user selects, and is conscious of what the browser informs it is its preference. The accent colors can change based on some variables set in <div class="inline-code">styles.css</div>. Please also note that this website is responsive, meaning it adapts to screen size (and mobile phones) as well as contains a back to top button that appears when necessary.
@@ -96,12 +97,12 @@ if (bttButton != null) {
 				<th>Papers and Research</th>
 			</tr>
 			<tr>
-				<td><a href="https://github.com/fluentverification/stamina-cplusplus">Link 1</a></td>
-				<td><a href="index.html">State-space truncation (STAMINA)</a></td>
+				<td><a href="https://github.com/fluentverification/ragtimer">Link 1</a></td>
+				<td><a href="https://staminachecker.org">State-space truncation (STAMINA)</a></td>
 				<td><a href="https://scholar.google.com/citations?hl=en&user=1bpMdpUAAAAJ">Google Scholar</a></td>
 			</tr>
 			<tr>
-				<td><a href="https://github.com/fluentverification/stamina">Link 2</a></td>
+				<td><a href="https://github.com/fluentverification/ragtimer">Link 2</a></td>
 				<td><a href="#">Property-Directed Reachability</a></td>
 			</tr>
 			<tr>
@@ -119,7 +120,7 @@ if (bttButton != null) {
 		</table>
 	</div>
 	<div style="padding-top: 30px;" >
-		YOUR SOFTWARE is part of the tools developed by the FLUENT Team. The SOFTWARE tool is licensed under the LICENSE license.
+		RAGTIMER is part of the tools developed by the FLUENT Team. The SOFTWARE tool is licensed under the LICENSE license.
 	</div>
 	<div style="padding-top: 10px; font-size: 8pt;" >
 		This website is designed and developed by hand by Josh Jeppson. The content and design of this website is licensed under the CC-BY-SA license.
