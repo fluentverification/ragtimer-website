@@ -70,6 +70,7 @@ body {
 
 #ragtimer:hover {
 	border-bottom: 0px;
+	background-image: none;
 }
 
 #dark-toggle {
@@ -260,6 +261,7 @@ input[type=text], select, textarea {
 	color: white;
 	border-bottom: 4px solid var(--accent-medium);
 	color: var(--accent-medium);
+	background-image: linear-gradient(var(--navbar-background), var(--accent-dark));
 }
 .graphic {
 	float: right;
@@ -289,8 +291,9 @@ p {
 	padding-top: 200px;
 	padding-bottom: 200px;
 	width: 60%;
-	color: var(--color-two);
+	color: white;
 	background-color: var(--background-three);
+	background-image: linear-gradient(var(--navbar-background), var(--navbar-background), var(--accent-medium));
 	font-family: 'Catamaran', sans-serif;
 /* 	background-image: url("images/banner.svg"); */
 }
@@ -333,16 +336,9 @@ p {
 	border-right: 1px solid #222222;
 }
 
-#stamina {
-	font-weight: bold;
-	padding-left: 40px;
-	padding-right: 40px;
-	background-color: var(--navbar-background);
-}
-
-#stamina:hover {
-	color: var(--accent-low-sat);
-}
+/*.navbar li a {
+	border-bottom: 4px solid var(--navbar-background);
+}*/
 
 #slogo {
 	display: inline;
@@ -377,6 +373,7 @@ p {
 .active, .navbar li a:hover {
 	border-bottom: 4px solid var(--accent-medium);
 	color: var(--accent-medium);
+	background-image: linear-gradient(var(--navbar-background), var(--accent-dark));
 }
 
 ul.navbar li.right {
@@ -388,8 +385,8 @@ ul.navbar li.right {
 	display: block;
 	position: absolute;
 	font-family: 'Catamaran', sans-serif;
-	background-color: var(--background-two);
-	color: var(--color);
+	background-color: var(--navbar-background);
+	color: white;
 	left: 0;
 	right: 0;
 	width: 80%;
@@ -401,7 +398,7 @@ ul.navbar li.right {
 }
 
 .footer a {
-	color: var(--accent-dark);
+	color: white;
 	text-decoration: none;
 }
 
@@ -412,7 +409,7 @@ ul.navbar li.right {
 }
 
 .footer-links table a {
-	color: var(--color);
+	color: white;
 }
 
 .footer-links td, .footer-links th {
