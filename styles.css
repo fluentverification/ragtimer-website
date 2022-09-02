@@ -293,7 +293,8 @@ p {
 	width: 60%;
 	color: white;
 	background-color: var(--background-three);
-	background-image: linear-gradient(var(--navbar-background), var(--navbar-background), var(--accent-medium));
+/* 	background-image: linear-gradient(var(--navbar-background), var(--background)); */
+	background-image: url("images/pexels-mao-li-11685015.jpg");
 	font-family: 'Catamaran', sans-serif;
 /* 	background-image: url("images/banner.svg"); */
 }
