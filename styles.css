@@ -40,8 +40,8 @@
 	:root {
 		--color: white;
 		--color-two: #f7f7f7;
-		--background: #222222;
-		--background-two: #262626;
+		--background: #111111;
+		--background-two: #171717;
 		--background-three: #363636;
 		--link-base: var(--accent-medium);
 	}
@@ -64,8 +64,8 @@ body {
 }
 
 #ragtimer {
-	padding-top: 10px;
-	padding-bottom: 8px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 #ragtimer:hover {
@@ -262,6 +262,13 @@ input[type=text], select, textarea {
 	border-bottom: 4px solid var(--accent-medium);
 	color: var(--accent-medium);
 	background-image: linear-gradient(var(--navbar-background), var(--accent-dark));
+	border-radius: 0px 12px 0px 12px ;
+	animation: change-br 0.5s ease;
+}
+
+@keyframes change-br {
+	from { border-radius: 12px 0px 12px 0px; }
+	to { border-radius: 0px 12px 0px 12px; }
 }
 .graphic {
 	float: right;
@@ -315,6 +322,7 @@ p {
 	font-family: 'Catamaran', sans-serif;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	transition: all 0.5s ease;
 }
 
 .contents {
@@ -372,7 +380,7 @@ p {
 }*/
 
 .active, .navbar li a:hover {
-	border-bottom: 4px solid var(--accent-medium);
+/* 	border-bottom: 4px solid var(--accent-medium); */
 	color: var(--accent-medium);
 	background-image: linear-gradient(var(--navbar-background), var(--accent-dark));
 }
@@ -422,6 +430,11 @@ ul.navbar li.right {
 	height: 60px;
 }
 
+.right {
+	display: inline-block;
+	float: right;
+}
+
 @media screen and (max-width: 900px) {
 	ul.navbar li.right,
 	ul.navbar li {
@@ -437,6 +450,9 @@ ul.navbar li.right {
 	.footer-links td, .footer-links th {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.right {
+		width: 100%;
 	}
 }
 

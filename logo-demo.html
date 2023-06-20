@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - RAGTIMER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="ragtimer-logo.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.svg">
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+</head>
+<body>
+<div class="navbar">
+<span class="ragtimer-logo-dynamic">
+<span class="r">R</span>
+<span class="a">A</span>
+<span class="g">G</span>
+<span class="t">T</span>
+<span class="i">I</span>
+<span class="m">M</span>
+<span class="e">E</span>
+<span class="m">R</span>
+<img class="e" src=images/icon-logo.svg height=35px id=logo><br>
+<span id="tgen"></span>
+</span>
+</div>
+<div class="content">
+<h1>In order to use the logo:</h1>
+<ol>
+	<li>Import the <code class="inline-code">ragtimer-logo.css</code> file, using the statement <code class="inline-code">&lt;link rel="icon" type="image/x-icon" href="images/favicon.svg"&gt;</code>, placed in the head of the document.</li>
+	<li>Put the following code in the navbar:</li>
+</ol>
+<pre class="code">
+&lt;span class="ragtimer-logo-dynamic">
+&lt;span class="r">R&lt;/span>
+&lt;span class="a">A&lt;/span>
+&lt;span class="g">G&lt;/span>
+&lt;span class="t">T&lt;/span>
+&lt;span class="i">I&lt;/span>
+&lt;span class="m">M&lt;/span>
+&lt;span class="e">E&lt;/span>
+&lt;span class="m">R&lt;/span>
+&lt;img class="e" src=images/icon-logo.svg height=50px id=logo>&lt;br>
+&lt;span id="tgen">&lt;/span>
+&lt;/span>
+</pre>
+If you wish to see what this looks like in either light or dark mode, you may use the following buttons:<br>
+<span class="button" onclick="setLightMode()">Set Light Mode</span>
+<span class="button" onclick="setDarkMode()">Set Dark Mode</span>
+</div>
+</body>

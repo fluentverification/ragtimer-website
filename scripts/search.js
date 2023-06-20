@@ -15,7 +15,7 @@ function showSearchBar() {
 function search(id='search') {
 	let query = document.getElementById(id).value;
 	console.log("Searching for " + query);
-	document.location.assign("https://staminachecker.org/search.html?q=" + query);
+	document.location.assign("/search.html?q=" + query);
 }
 
 

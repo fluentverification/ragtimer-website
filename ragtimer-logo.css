@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Playfair+Display:ital,wght@0,500;1,400&family=Roboto+Slab:wght@300&display=swap');
+
+.ragtimer-logo-dynamic {
+/* 	font-family: 'Playfair Display', serif; */
+/* 	font-family: 'Roboto Slab', serif; */
+	font-family: 'Averia Serif Libre', cursive;
+	color: white;
+	padding: 30px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+/* 	padding-top: 50px; */
+	cursor: pointer;
+	display: inline-block;
+	background-color: var(--navbar-background);
+}
+
+.ragtimer-logo-dynamic:hover {
+	background-color: var(--accent-medium);
+	color: black;
+	animation: change-border-radius 0.5s ease;
+	animation-iteration-count: 1;
+	border-radius: 48px;
+}
+
+.logo-background a {
+	padding: 0px;
+}
+
+@keyframes change-border-radius {
+	from { border-radius: 0px; }
+	to { border-radius: 48px; }
+}
+
+.r, .a, .g, .t, .i, .m, .e {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	margin-left: -4px;
+}
+
+.r, .g, .i, .e {
+	transform: rotate(-6deg);
+	font-size: 16pt;
+}
+
+.a, .t, .m {
+	transform: rotate(6deg);
+	font-size: 14pt;
+}
+
+.r:hover, .g:hover, .i:hover, .e:hover {
+	animation: rotate1 4s ease infinite;
+}
+
+.a:hover, .t:hover, .m:hover {
+	animation: rotate2 4s ease infinite;
+}
+
+#tgen {
+}
+
+#tgen:before {
+	position: relative;
+	font-size: 12px;
+	top: 0px;
+	left: 5px;
+	padding: 0px;
+	margin: 0px;
+	margin-left: -30px;
+	content: "trace generation";
+	font-family: 'Averia Serif Libre', cursive;
+}
+
+#tgen:hover:before {
+	/* A little easter egg. Try putting this after https://youtu.be/ */
+	content: "dQw4w9WgXcQ";
+	animation: egg 2s ease;
+}
+
+@keyframes egg {
+	from {
+		content: "trace generation";
+		color: black;
+		
+	}
+	49% {
+		content: "trace generation";
+		color: var(--accent-medium);
+	}
+	50% {
+		content: "dQw4w9WgXcQ";
+		color: var(--accent-medium);
+	}
+	to {
+		content: "dQw4w9WgXcQ";
+		color: black;
+	}
+}
+
+#logo {
+	margin-left: 10px;
+	position: relative;
+	bottom: -10px;
+}
+
+.ragtimer-logo-dynamic:hover #logo {
+	filter: invert(100%);
+}
+
+@keyframes rotate1 {
+	from { transform: rotate(-6deg); }
+	50% { transform: rotate(60deg); }
+	to { transform: rotate(-6deg); }
+}
+
+@keyframes rotate2 {
+	from { transform: rotate(6deg); }
+	50% { transform: rotate(-60deg); }
+	to { transform: rotate(6deg); }
+}

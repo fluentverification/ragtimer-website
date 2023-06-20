@@ -6,19 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.svg">
+	<link rel="stylesheet" href="ragtimer-logo.css">
 	<script type="text/javascript" src="scripts/scripts.js"></script>
 </head>
 <body>
 <!-- Navigation Bar -->
 <ul class="navbar" id="navbar">
-	<li class="logo-background"><a id="ragtimer" href="index.html"><img src=images/logo.png class="ragtimer-logo"></a></li>
+	<li class="logo-background"><a id="ragtimer" href="index.html"><span class="ragtimer-logo-dynamic">
+<span class="r">R</span>
+<span class="a">A</span>
+<span class="g">G</span>
+<span class="t">T</span>
+<span class="i">I</span>
+<span class="m">M</span>
+<span class="e">E</span>
+<span class="m">R</span>
+<img class="e" src=images/icon-logo.svg height=35px id=logo><br>
+<span id="tgen"></span>
+</span></a></li>
+	<div class="right">
 	<li><a class="openbutton" id="openbutton" onclick="openNav()">&#9776;</a></li>
 	<li><a class="closebutton" id="closebutton" onclick="closeNav()">&times;</a></li>
 	<li><a class="active" id="active" href="index.html">Home</a></li>
 	<li><a class="navbutton" href="about.html">About</a></li>
 	<li><a class="navbutton" href="download.html">Download</a></li>
 	<li class="right"><a id="dark-toggle" title="Toggle Light/Dark Mode" onclick="toggleDarkMode()"><img src="images/icons/darkLight.svg" height="15px"></a></li>
-	<li class="right"><a class="fluent" href="https://fluentverification.github.io">FLUENT Verification</a></li>
+	</div>
+<!--	<li class="right"><a class="fluent" href="https://fluentverification.github.io">FLUENT Verification</a></li>-->
 <!-- 	<li class="right"><a class="fluent" href="https://fluentverification.github.io">FLUENT Verification</a></li> -->
 </ul>
 <div class="top-buffer" id="top-buffer"><br></div>

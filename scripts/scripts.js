@@ -58,8 +58,8 @@ function setDarkMode() {
 	var rt = document.querySelector(':root');
 	rt.style.setProperty('--color', 'white');
 	rt.style.setProperty('--color-two', '#f7f7f7');
-	rt.style.setProperty('--background', '#222222');
-	rt.style.setProperty('--background-two', '#262626');
+	rt.style.setProperty('--background', '#111111');
+	rt.style.setProperty('--background-two', '#171717');
 	rt.style.setProperty('--background-three', '#363636');
 	rt.style.setProperty('--link-base', 'var(--accent-medium)');
 
